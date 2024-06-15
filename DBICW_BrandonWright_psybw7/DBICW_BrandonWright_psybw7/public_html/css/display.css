@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo:wght@600&family=Roboto:wght@300&display=swap');
+
+/* This file is for the pages that display tables. Hence display.css */
+
+
+:root{ /* to store variables like a struct */
+
+   --lightCOL: #3d3d3d;
+   --darkCOL: #ef233c;
+   --DB: #2b2d42;
+   --Roboto: 'Roboto', sans-serif; 
+   --Exo: 'Exo', sans-serif;
+}
+
+*{ /* This applies first to all tags on the page */
+   margin: 0;                                                                                                     
+   padding: 0; /* We want margin and padding as 0 so we dont have any weird starting offsets*/  
+   box-sizing: border-box;
+}
+
+body{ /* This applies to the body tag */
+   background: #1b1b1b;
+   /* background-image: url("../assets/BG.png"); */
+   background-repeat: no-repeat;
+   background-size: 100%, 100%;
+
+}
+
+.header{
+   display: inline-block;
+   /* background: var(--darkCOL); */
+   font-family: var(--Exo);
+   color: rgba(255, 255, 255, 0.801);
+   -webkit-text-stroke-width: 3px;                       /* Webkit is used to gain the attribute of outlines to text characters */
+   -webkit-text-stroke-color: rgba(173, 156, 2, 0.856);
+   width: 100%;   /* Ensure the header is 100% so it can be centered easily */
+   padding-top: 10%;
+   text-align: center;
+   transition: all 0.5s ease-out; /* Apply using "all" so all animations with class header are the same in duration */
+   font-size: 300%;
+
+}
+
+.header:hover{ /* Does the glow affect on hover */
+
+   text-shadow: 2px 2px rgb(85, 76, 1), 3px 3px rgb(85, 76, 1), 4px -4px 10px rgba(204, 184, 2, 0.808), 8px -4px 16px rgba(204, 184, 2, 0.507),12px -8px 32px rgba(204, 184, 2, 0.164); 
+
+
+}
+
+.Options{
+
+   margin-top: 10%;
+   margin-left: auto;   
+   width: 100%;
+   height: 30%;
+   padding: 20px;
+  
+   /* border-style: solid; */
+}
+
+.back{
+
+   font-family: var(--Exo);
+   font-size: 200%;
+   width: 100%;
+   text-align: center;
+
+}
+
+a{
+   color:rgba(255, 255, 255, 0.801);
+   -webkit-text-stroke-width: 1.75px;
+   -webkit-text-stroke-color: rgba(173, 156, 2, 0.856);
+   transition: all 0.5s ease-out;
+   text-decoration: none;
+}
+
+a:hover{
+   font-size: 250%;
+
+}
+
+.results{
+    width:100%;
+
+}
+
+th{
+   background-color: rgb(158, 10, 10);
+   font-size: 155%;
+}
+
+td{
+
+   background-color: rgb(196, 196, 196);
+   color: rgb(179, 161, 0);
+}
+
+tr{
+
+   font-size: 135%;
+
+}
+.back{
+
+   font-family: 'Bebas Neue', cursive;
+   font-size: 500%;
+   color:wheat;
+
+}
+table{
+   font-family: 'Bebas Neue', cursive;
+   -webkit-text-stroke-width: 0.1px;
+   -webkit-text-stroke-color: black;
+    color: rgb(255, 230, 0);
+    margin: 100px auto;
+    text-align: center;
+}
+
+.errorDIV{
+
+   width:100%;
+   color: white;
+   font-family: 'Bebas Neue', cursive;
+   font-size: 150%;
+   text-align: center;
+}
+
+.errorIMG{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  width: 50%;
+
+}
+
+.Centered-button{
+
+   width:100%;
+
+}
+
+button{
+   border: none;
+   border-radius: 10px;
+   text-align: center;
+   background-color: rgba(255, 255, 255, 0.801);
+   width: 10%;
+   text-decoration: none;
+   display: block;
+   padding: 10px 10px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 3%;
+   width: 11%;
+   color: #797b1e;
+   font-size: 100%;
+   transition: all 0.5s ease-out;
+   cursor: pointer;
+}
+
+button:hover{
+
+   border-radius: 40px;
+   color: #b0b320;
+   font-size: 150%;
+   width: 22%;
+}
+
+button:active{
+   background-color: #d0c201;
+   color: rgb(226, 219, 219);
+} 
+
+
+select{
+   border: none;
+   border-radius: 10px;
+   display: inline-block;
+   text-align: center;
+   background-color: rgba(255, 255, 255, 0.801);
+   width: 33%;
+   padding: 30px 50px;
+   text-decoration: none;
+   display: inline-block;
+   color: #797b1e;
+   font-size: 270%;
+   transition: all 0.5s ease-out;
+   cursor: pointer;
+   margin-left: 33%;
+}
+
+select:hover{
+   border-radius: 5px;
+   color: #b0b320;
+}
+
+.inputField{
+   border: none;
+   border-radius: 10px;
+   display: inline-block;
+   text-align: center;
+   background-color: rgba(255, 255, 255, 0.801);
+   width: 33%;
+   padding: 25px 25px;
+   text-decoration: none;
+   display: inline-block;
+   color: #797b1e;
+   font-size: 300%;
+   transition: all 0.5s ease-out;
+   cursor: pointer;
+   margin-left: 33%;
+   margin-top: 140px;
+}
+
+input{
+   border: none;
+   border-radius: 10px;
+   display: inline-block;
+   text-align: center;
+   background-color: rgba(255, 255, 255, 0.801);
+   width: 33%;
+   padding: 25px 25px;
+   text-decoration: none;
+   display: inline-block;
+   color: #797b1e;
+   font-size: 300%;
+   transition: all 0.5s ease-out;
+   cursor: pointer;
+   margin-left: 33%;
+   margin-top: 140px;
+}
+
+
+
+input:hover{
+   border-radius: 20px;
+   font-size: 350%;
+   color: #b0b320;
+
+}
+
+
+.img{
+   padding: 0px;
+   margin: 0px;
+   width: 80px;
+   height:auto;
+   transition: all 0.5s ease-out;
+}
+
+.img:hover{
+   
+   transform: rotate(30deg);
+    
+
+}
+
+.Leftpep{
+   float: left;
+}
+
+.Rightpep{
+   float: right;
+}
+
+@media screen and (max-width: 500px) {
+
+   .header{
+      font-size: 400%;
+   }
+
+  .header h1 {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+  
+}
+
+
